@@ -28,10 +28,7 @@ class _ScheduleDetail extends State<ScheduleDetail> {
       appBar: AppBar(
         backgroundColor: Colors.black87,
         title: Text(sc.speaker.name),
-
       ),
-
-
 
       body: Column(
         children: <Widget>[
@@ -44,8 +41,6 @@ class _ScheduleDetail extends State<ScheduleDetail> {
                     image: new DecorationImage(
                         fit: BoxFit.fill,
                         image: AssetImage(sc.speaker.photo))
-
-
                 ),
                 height: 200.0,
                 width: 200.0,
@@ -58,19 +53,19 @@ class _ScheduleDetail extends State<ScheduleDetail> {
                 crossAxisAlignment: CrossAxisAlignment.center,
 
                 children: <Widget>[
-                  new InkWell(
+                   InkWell(
                       child: Icon(FontAwesomeIcons.twitter),
                       onTap: () => _launchURL(sc.speaker.twitter))
                   ,
-                  new InkWell(
+                   InkWell(
                       child: Icon(FontAwesomeIcons.facebook),
                       onTap: () => _launchURL(sc.speaker.facebook))
                   ,
-                  new InkWell(
+                   InkWell(
                       child: Icon(FontAwesomeIcons.instagram),
                       onTap: () => _launchURL(sc.speaker.instagram))
                   ,
-                  new InkWell(
+                   InkWell(
                       child: Icon(FontAwesomeIcons.pagelines),
                       onTap: () => _launchURL(sc.speaker.website))
 
@@ -120,14 +115,9 @@ class _ScheduleDetail extends State<ScheduleDetail> {
             Text(sc.talk.description == null ? "Sin descripción" : sc.talk.description, style: TextStyle( fontSize: 20.0),)
                 ],
               )),
-
-
         ],
-
       ),
     );
-
-
   }
 
   _launchURL(String link) async {

@@ -7,7 +7,7 @@ description: App that list speakers and schedule of an event.
 # Both the version and the builder number may be overridden in flutter
 # build by specifying --build-name and --build-number, respectively.
 # Read more about versioning at semver.org.
-version: 1.0.0+1
+version: 2.0.0+2
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
@@ -55,6 +55,19 @@ flutter:
     - images/juan.png
     - images/junior.png
     - images/rickelvis.png
+    - images/angel.jpg
+    - images/charlin.jpg
+    - images/ernesto.jpg
+    - images/luis.jpeg
+    - images/micm.png
+    - images/ctc.png
+    - images/jose.png
+    - images/valmis.jpg
+    - images/harryv.jpeg
+    - images/eneldo.jpeg
+    - images/logomini.png
+    - images/reservas.jpg
+
 
   #  - images/a_dot_ham.jpeg
 
