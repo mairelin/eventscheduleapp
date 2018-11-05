@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:eventscheduleapp/domain/schedule.dart';
+import 'package:opensaturday/domain/schedule.dart';
 import 'schedule_detail.dart';
 
 class ScheduleList extends StatefulWidget {

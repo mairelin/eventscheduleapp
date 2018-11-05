@@ -1,4 +1,4 @@
-import 'package:eventscheduleapp/domain/schedule.dart';
+import 'package:opensaturday/domain/schedule.dart';
 
 abstract class ScheduleService {
 

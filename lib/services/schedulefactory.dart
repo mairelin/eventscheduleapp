@@ -1,8 +1,8 @@
-import 'package:eventscheduleapp/domain/schedule.dart';
-import 'package:eventscheduleapp/domain/talk.dart';
-import 'package:eventscheduleapp/domain/speaker.dart';
+import 'package:opensaturday/domain/schedule.dart';
+import 'package:opensaturday/domain/talk.dart';
+import 'package:opensaturday/domain/speaker.dart';
 
-import 'package:eventscheduleapp/services/scheduleservice.dart';
+import 'package:opensaturday/services/scheduleservice.dart';
 
 class ScheduleFactory extends ScheduleService {
 
