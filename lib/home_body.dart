@@ -152,7 +152,12 @@ class _HomeBody extends State<HomeBody> {
                         child: Stack(children: <Widget>[
                           Hero(
                             tag:_datList[index].tag,
-                              child: Image.network(_datList[index].imageSrc)),
+                              child: FadeInImage.assetNetwork(
+                                fadeInCurve: Curves.bounceIn,
+                                  placeholder: 'image/logo.png',
+                                  image:_datList[index].imageSrc
+                              )
+                          ),
                           Align(
                               alignment: Alignment(0.0, 1.0),
                               child: Container(

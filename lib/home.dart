@@ -93,6 +93,11 @@ class _ScheduleTab extends State<ScheduleTab> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               IconButton(
+                  icon: Icon(FontAwesomeIcons.instagram),
+                  onPressed: () {
+                    _launchURL("https://www.instagram.com/opensaturday/");
+                  }),
+              IconButton(
                   icon: Icon(FontAwesomeIcons.facebook),
                   onPressed: () {
                     _launchURL("https://www.facebook.com/opensaturday");
