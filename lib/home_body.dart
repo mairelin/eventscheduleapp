@@ -1,11 +1,12 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 import 'dart:async';
-import 'dart:core';
-import 'package:http/http.dart' as http;
-import 'package:html/parser.dart' show parse;
 import 'dart:convert';
+import 'dart:core';
+
 import 'package:async_loader/async_loader.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:html/parser.dart' show parse;
+import 'package:http/http.dart' as http;
 
 class MediaObjects {
   MediaObjects({
@@ -154,7 +155,7 @@ class _HomeBody extends State<HomeBody> {
                             tag:_datList[index].tag,
                               child: FadeInImage.assetNetwork(
                                 fadeInCurve: Curves.bounceIn,
-                                  placeholder: 'image/logo.png',
+                                  placeholder: 'images/logo.png',
                                   image:_datList[index].imageSrc
                               )
                           ),

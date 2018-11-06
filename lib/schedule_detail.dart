@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:opensaturday/domain/schedule.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ScheduleDetail extends StatefulWidget {
 
-  Schedule selectedItem;
+  dynamic selectedItem;
 
   ScheduleDetail({Key key, this.selectedItem}) : super(key: key);
 
@@ -16,7 +15,7 @@ class ScheduleDetail extends StatefulWidget {
 
 class _ScheduleDetail extends State<ScheduleDetail> {
 
-  Schedule sc;
+  dynamic sc;
 
   _ScheduleDetail(this.sc);
 
