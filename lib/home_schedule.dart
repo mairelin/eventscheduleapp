@@ -42,32 +42,46 @@ class _HomeSchedule extends State<HomeSchedule>
   }
 
   obteniendoStreams() async {
+
+//    final DocumentReference postRef = Firestore.instance.document('days/8rQbpIR2xfeRGRovjyfG');
+//    Firestore.instance.runTransaction((Transaction tx) async {
+//      DocumentSnapshot postSnapshot = await tx.get(postRef);
+//      if (postSnapshot.exists) {
+//        var ch = postSnapshot.data['talks'].add(
+//            <String, dynamic>{
+//              'endTime': '6 de noviembre de 2018, 16:00:00 UTC-4'
+//            }
+//        );
+//        await tx.update(postRef, <String, dynamic>{'talks': postSnapshot.data['talks']});
+//      }
+//    });
+
     this._subs =
         Firestore.instance.collection('days').snapshots().listen((snapshot) {
-      print(snapshot.documents[0]['name'].toString());
+//      print(snapshot.documents[0]['name'].toString());
       snapshot.documents.forEach((DocumentSnapshot doc) {
 //            doc['talks'].map((DocumentSnapshot talk){
 //
 //            });
 //      print(doc['talks'][0]['place']);
-      List<Widget> list = [];
-        for (var i = 0; i < doc['talks'].length; i++) {
-          print(doc['talks'][i]['place']);
-          list.add(
-              Container(
-                child: Column(
-                  children: <Widget>[
-                    Text(doc['talks'][i]['place']),
-                    Text(doc['talks'][i]['talk_name']),
-                    Text(doc['talks'][i]['speaker']['twitter']),
-                  ],
-                ),
-              )
-          );
-        }
-        Widget el = ListView(
-          children: list,
-        );
+//      List<Widget> list = [];
+//        for (var i = 0; i < doc['talks'].length; i++) {
+////          print(doc['talks'][i]['place']);
+//          list.add(
+//              Container(
+//                child: Column(
+//                  children: <Widget>[
+//                    Text(doc['talks'][i]['place']),
+//                    Text(doc['talks'][i]['talk_name']),
+//                    Text(doc['talks'][i]['speaker']['twitter']),
+//                  ],
+//                ),
+//              )
+//          );
+//        }
+//        Widget el = ListView(
+//          children: list,
+//        );
         setState(() {
 //              tabs.removeLast();
           this.schedule.clear();

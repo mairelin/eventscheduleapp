@@ -74,7 +74,7 @@ class _ScheduleListState extends State<ScheduleList> {
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: <Widget>[
                               Padding(padding: EdgeInsets.only(right: 10.0),
-                                  child: Text("${sc['starttime']} hola", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0)))
+                                  child: Text("${sc['startTime']} hola", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0)))
                             ],
                           ),
                           new Divider(height: 15.0,color: Colors.grey)
