@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "330073170083",
+    "firebase_url": "https://opensaturdayconf.firebaseio.com",
+    "project_id": "opensaturdayconf",
+    "storage_bucket": "opensaturdayconf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330073170083:android:3338566f459989d1",
+        "android_client_info": {
+          "package_name": "org.mairelin.eventscheduleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330073170083-lb61t6a6re3eisdf5rkfbburgf49vlaq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcNrUwfPEFTZ01IZrjBI0_179Gz-Pc7Lg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,6 @@
-import 'package:eventscheduleapp/domain/schedule.dart';
-import 'package:eventscheduleapp/services/scheduleservice.dart';
-import 'package:eventscheduleapp/services/schedulefactory.dart';
+import 'package:opensaturday/domain/schedule.dart';
+import 'package:opensaturday/services/scheduleservice.dart';
+import 'package:opensaturday/services/schedulefactory.dart';
 
 
 List<Schedule> checkCurrentAndNextTalk() {
